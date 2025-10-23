@@ -50,8 +50,21 @@ const impacts = [
 
 export default function Impact() {
   return (
-    <section className="py-20 px-4 bg-white" id="impact">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-4 relative overflow-hidden" id="impact">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute inset-0 opacity-15"
+          style={{
+            backgroundImage: "url('https://static.vecteezy.com/ti/photos-gratuite/p2/5458914-magnifique-vue-aerienne-sur-le-massif-des-vosges-en-alsace-photo.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-casse" />
+      </div>
+      <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

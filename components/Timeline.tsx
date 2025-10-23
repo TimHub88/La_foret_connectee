@@ -34,6 +34,7 @@ const steps = [
       "Le bois est travaillé par des artisans locaux qualifiés : menuisiers, ébénistes, sculpteurs. Savoir-faire traditionnel et techniques modernes combinés.",
     color: "dore",
     image: "/images/STEP3.png",
+    hasArtisanProfile: true,
   },
   {
     id: 4,
@@ -108,9 +109,20 @@ export default function Timeline() {
                     </div>
                     
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-sapin mb-2">
-                        {step.title}
-                      </h3>
+                      <div className="flex items-start justify-between mb-2">
+                        <h3 className="text-xl font-bold text-sapin">
+                          {step.title}
+                        </h3>
+                        {step.hasArtisanProfile && (
+                          <a
+                            href="#artisan-profile"
+                            className="flex items-center gap-1 bg-dore/20 text-sapin px-3 py-1 rounded-full text-xs font-semibold hover:bg-dore/30 transition-all hover:scale-105 whitespace-nowrap"
+                            title="Découvrir Hugo, artisan vosgien"
+                          >
+                            👤 Hugo
+                          </a>
+                        )}
+                      </div>
                       <p className="text-sm text-dore mb-3">{step.subtitle}</p>
 
                       <motion.div
@@ -125,6 +137,20 @@ export default function Timeline() {
                         <p className="text-gray-700 text-sm leading-relaxed">
                           {step.description}
                         </p>
+                        {step.hasArtisanProfile && (
+                          <div className="mt-4 p-3 bg-sapin/5 rounded-lg border-l-3 border-dore">
+                            <p className="text-xs text-gray-600 italic">
+                              💡 Découvrez comment <strong>Hugo NUNGE-THOUVENIN</strong>, 
+                              jeune menuisier vosgien, pourrait participer activement à cette initiative.
+                              <a 
+                                href="#artisan-profile" 
+                                className="text-sapin font-semibold hover:underline ml-1"
+                              >
+                                En savoir plus →
+                              </a>
+                            </p>
+                          </div>
+                        )}
                       </motion.div>
 
                       <button
@@ -181,13 +207,33 @@ export default function Timeline() {
                 </div>
                 
                 <div className="p-4">
-                  <h3 className="text-lg font-bold text-sapin mb-1">
-                    {step.title}
-                  </h3>
+                  <div className="flex items-start justify-between mb-1">
+                    <h3 className="text-lg font-bold text-sapin">
+                      {step.title}
+                    </h3>
+                    {step.hasArtisanProfile && (
+                      <a
+                        href="#artisan-profile"
+                        className="flex items-center gap-1 bg-dore/20 text-sapin px-2 py-1 rounded-full text-xs font-semibold hover:bg-dore/30 transition-all whitespace-nowrap"
+                        title="Découvrir Hugo"
+                      >
+                        👤 Hugo
+                      </a>
+                    )}
+                  </div>
                   <p className="text-sm text-dore mb-2">{step.subtitle}</p>
                   <p className="text-gray-700 text-sm leading-relaxed">
                     {step.description}
                   </p>
+                  {step.hasArtisanProfile && (
+                    <div className="mt-3 p-2 bg-sapin/5 rounded-lg">
+                      <p className="text-xs text-gray-600">
+                        💡 <a href="#artisan-profile" className="text-sapin font-semibold hover:underline">
+                          Découvrez Hugo →
+                        </a>
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>

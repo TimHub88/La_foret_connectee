@@ -3,9 +3,9 @@
 import Hero from "@/components/Hero";
 import Timeline from "@/components/Timeline";
 import HowItWorks from "@/components/HowItWorks";
-import ArtisanProfile from "@/components/ArtisanProfile";
 import Impact from "@/components/Impact";
-import Gallery from "@/components/Gallery";
+import ArtisanProfile from "@/components/ArtisanProfile";
+import Quiz from "@/components/Quiz";
 import Partners from "@/components/Partners";
 import Footer from "@/components/Footer";
 
@@ -15,9 +15,9 @@ export default function Home() {
       <Hero />
       <Timeline />
       <HowItWorks />
-      <ArtisanProfile />
       <Impact />
-      <Gallery />
+      <ArtisanProfile />
+      <Quiz />
       <Partners />
       <Footer />
     </main>

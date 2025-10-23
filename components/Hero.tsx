@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl md:text-2xl text-casse/90 mb-8 font-light"
+          className="text-2xl md:text-3xl text-white mb-6 font-bold drop-shadow-lg"
         >
           Transmettons la nature vosgienne
         </motion.p>
@@ -59,7 +59,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-lg text-casse/80 mb-12 max-w-2xl mx-auto"
+          className="text-xl md:text-2xl text-white font-semibold mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow-lg"
         >
           Une proposition concrète pour tracer, valoriser et transformer chaque arbre de nos forêts vosgiennes en objets artisanaux uniques.
         </motion.p>
@@ -67,12 +67,19 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <a
             href="#how-it-works"
-            className="inline-block bg-dore text-sapin px-8 py-4 rounded-lg font-semibold text-lg hover:bg-dore/90 transition-all hover:scale-105 shadow-lg"
+            className="inline-block bg-dore text-sapin px-8 py-4 rounded-lg font-bold text-lg hover:bg-dore/90 transition-all hover:scale-105 shadow-lg"
           >
             Découvrir le projet
+          </a>
+          <a
+            href="#quiz"
+            className="inline-block bg-white text-sapin px-8 py-4 rounded-lg font-bold text-lg hover:bg-casse transition-all hover:scale-105 shadow-lg"
+          >
+            Jouer au quiz
           </a>
         </motion.div>
 
