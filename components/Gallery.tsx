@@ -5,34 +5,49 @@ import { useState } from "react";
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1511497584788-876760111969?w=800&q=80",
-    title: "Forêt des Vosges",
+    url: "https://www.birdsandbicycles.fr/files/2022/11/balade-vosges-automne-blog-2.jpg",
+    title: "Forêt des Vosges en automne",
     category: "Forêt",
   },
   {
-    url: "https://images.unsplash.com/photo-1504624720567-64a41edd4930?w=800&q=80",
-    title: "Artisan au travail",
-    category: "Atelier",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1550355191-aa8a80b41353?w=800&q=80",
-    title: "Bois travaillé",
-    category: "Produit",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=800&q=80",
-    title: "Ébénisterie",
-    category: "Atelier",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?w=800&q=80",
-    title: "Produit fini",
-    category: "Produit",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
-    title: "Nature vosgienne",
+    url: "https://cdn.pixabay.com/photo/2022/02/22/13/22/vosges-7028782_1280.jpg",
+    title: "Forêt enneigée",
     category: "Forêt",
+  },
+  {
+    url: "https://cdn-s-www.leprogres.fr/images/F69186D5-16D6-4F9F-95D1-73AA99BDB0E3/NW_raw/si-le-bois-de-sapin-est-utilise-en-menuiserie-les-bourgeons-permettent-eux-de-preparer-une-tisane-benefique-pour-les-bronches-photo-c-michel-pnrbv-1614159741.jpg",
+    title: "Sapins des Vosges",
+    category: "Forêt",
+  },
+  {
+    url: "https://helce.fr/wp-content/uploads/2022/12/sans-titre-5-sur-11-scaled.jpg",
+    title: "Artisan ébéniste vosgien",
+    category: "Atelier",
+  },
+  {
+    url: "https://cdn-s-www.vosgesmatin.fr/images/64e2f171-6e46-48ca-92fa-7933f38f725f/NW_raw/gerbamont-le-25-11-2020-portrait-d-adam-etienne-dans-son-atelier-photo-vm-jerome-humbrecht-1606745130.jpg",
+    title: "Artisan dans son atelier",
+    category: "Atelier",
+  },
+  {
+    url: "https://www.forumbrico.fr/wp-content/uploads/2019/02/Outils-pour-le-bois-menuiserie.jpg",
+    title: "Outils de menuiserie",
+    category: "Atelier",
+  },
+  {
+    url: "https://static.wixstatic.com/media/e3ce5d_b954f104ed5d44b58905ac2d3dbe13df~mv2.jpg/v1/fill/w_528,h_708,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e3ce5d_b954f104ed5d44b58905ac2d3dbe13df~mv2.jpg",
+    title: "Chaise design en bois",
+    category: "Produit",
+  },
+  {
+    url: "https://www.meuble-house.fr/media/catalog/product/cache/fbdf6eab5d71d83d9b1e1c285d3b915e/t/a/table-chene-massif-allonges_1.jpg",
+    title: "Table en chêne massif",
+    category: "Produit",
+  },
+  {
+    url: "https://ebenistedart.ca/wp-content/uploads/2024/04/ebeniste-dart_projet-le-gout-des-boiseries_salon_1.jpg",
+    title: "Marqueterie artisanale",
+    category: "Produit",
   },
 ];
 

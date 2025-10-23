@@ -13,6 +13,7 @@ const steps = [
     description:
       "Chaque arbre est identifié et inventorié selon des critères stricts de gestion forestière durable. Respect de la biodiversité et de l'écosystème vosgien.",
     color: "sapin",
+    image: "/images/STEP1.jpg",
   },
   {
     id: 2,
@@ -20,8 +21,9 @@ const steps = [
     title: "Traçabilité",
     subtitle: "Suivi numérique",
     description:
-      "Un QR code unique est généré pour chaque arbre, permettant un suivi complet de son origine à sa transformation. Données enregistrées en temps réel.",
+      "Proposition d'un système de traçabilité numérique pour chaque arbre, permettant un suivi complet de son origine à sa transformation avec données enregistrées en temps réel.",
     color: "bois",
+    image: "/images/STEP2.jpg",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const steps = [
     description:
       "Le bois est travaillé par des artisans locaux qualifiés : menuisiers, ébénistes, sculpteurs. Savoir-faire traditionnel et techniques modernes combinés.",
     color: "dore",
+    image: "/images/STEP3.png",
   },
   {
     id: 4,
@@ -38,8 +41,9 @@ const steps = [
     title: "Produit",
     subtitle: "Objet artisanal",
     description:
-      "Chaque produit fini porte le QR code de son arbre d'origine. Le consommateur accède à l'histoire complète : forêt, artisan, transformation.",
+      "Chaque produit fini serait marqué avec un identifiant relié à son arbre d'origine. Le consommateur pourrait accéder à l'histoire complète : forêt, artisan, transformation.",
     color: "brume",
+    image: "/images/STEP4.jpg",
   },
 ];
 
@@ -57,10 +61,10 @@ export default function Timeline() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-sapin mb-4">
-            Le Parcours
+            Le Parcours Proposé
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            De la forêt à votre intérieur, suivez le voyage de nos ressources forestières
+            De la forêt à l'intérieur : le voyage envisagé pour nos ressources forestières
           </p>
         </motion.div>
 
@@ -93,34 +97,45 @@ export default function Timeline() {
                   </motion.div>
 
                   {/* Card */}
-                  <div className="bg-white rounded-lg p-6 shadow-md">
-                    <h3 className="text-xl font-bold text-sapin mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-sm text-dore mb-3">{step.subtitle}</p>
+                  <div className="bg-white rounded-lg overflow-hidden shadow-md">
+                    {/* Image */}
+                    <div className="w-full h-48 overflow-hidden">
+                      <img
+                        src={step.image}
+                        alt={step.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-sapin mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-sm text-dore mb-3">{step.subtitle}</p>
 
-                    <motion.div
-                      initial={false}
-                      animate={{
-                        height: activeStep === step.id ? "auto" : "0px",
-                        opacity: activeStep === step.id ? 1 : 0,
-                      }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <p className="text-gray-700 text-sm leading-relaxed">
-                        {step.description}
-                      </p>
-                    </motion.div>
+                      <motion.div
+                        initial={false}
+                        animate={{
+                          height: activeStep === step.id ? "auto" : "0px",
+                          opacity: activeStep === step.id ? 1 : 0,
+                        }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <p className="text-gray-700 text-sm leading-relaxed">
+                          {step.description}
+                        </p>
+                      </motion.div>
 
-                    <button
-                      onClick={() =>
-                        setActiveStep(activeStep === step.id ? null : step.id)
-                      }
-                      className="text-sapin text-sm font-semibold mt-3 hover:text-bois transition-colors"
-                    >
-                      {activeStep === step.id ? "Voir moins" : "En savoir plus"}
-                    </button>
+                      <button
+                        onClick={() =>
+                          setActiveStep(activeStep === step.id ? null : step.id)
+                        }
+                        className="text-sapin text-sm font-semibold mt-3 hover:text-bois transition-colors"
+                      >
+                        {activeStep === step.id ? "Voir moins" : "En savoir plus"}
+                      </button>
+                    </div>
                   </div>
                 </motion.div>
               ))}
@@ -155,14 +170,25 @@ export default function Timeline() {
                 )}
               </div>
 
-              <div className="flex-1 bg-white rounded-lg p-4 shadow-md">
-                <h3 className="text-lg font-bold text-sapin mb-1">
-                  {step.title}
-                </h3>
-                <p className="text-sm text-dore mb-2">{step.subtitle}</p>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  {step.description}
-                </p>
+              <div className="flex-1 bg-white rounded-lg overflow-hidden shadow-md">
+                {/* Image */}
+                <div className="w-full h-40 overflow-hidden">
+                  <img
+                    src={step.image}
+                    alt={step.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-sapin mb-1">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-dore mb-2">{step.subtitle}</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}

@@ -3,12 +3,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "La Forêt Connectée - Transmettons la nature vosgienne",
-  description: "Découvrez l'initiative de traçabilité et valorisation du bois vosgien. Du sapin à l'objet artisanal, suivez le parcours de nos ressources forestières.",
-  keywords: "Vosges, forêt, traçabilité, artisanat, bois, développement durable",
-  authors: [{ name: "La Forêt Connectée" }],
+  description: "Proposition concrète de traçabilité et valorisation du bois vosgien. Du sapin à l'objet artisanal, une initiative pour les Vosges.",
+  keywords: "Vosges, forêt, traçabilité, artisanat, bois, développement durable, Vosj'innove",
+  authors: [{ name: "Vosj'innove" }],
   openGraph: {
     title: "La Forêt Connectée - Transmettons la nature vosgienne",
-    description: "Traçabilité et valorisation du bois vosgien",
+    description: "Proposition de traçabilité et valorisation du bois vosgien",
     type: "website",
   },
 };

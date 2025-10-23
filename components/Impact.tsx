@@ -6,44 +6,44 @@ import { FaTree, FaUsers, FaHandHoldingHeart } from "react-icons/fa";
 const stats = [
   {
     icon: FaTree,
-    number: "2,500+",
-    label: "Arbres tracés",
-    description: "Depuis le lancement du programme",
+    number: "~3,000",
+    label: "Arbres/an",
+    description: "Objectif de traçabilité annuel",
     color: "sapin",
   },
   {
     icon: FaUsers,
-    number: "45",
-    label: "Artisans partenaires",
+    number: "40+",
+    label: "Artisans potentiels",
     description: "Menuisiers, ébénistes, sculpteurs",
     color: "bois",
   },
   {
     icon: FaHandHoldingHeart,
-    number: "12,000",
-    label: "Arbres replantés",
-    description: "Pour chaque arbre récolté",
+    number: "x2",
+    label: "Replantation",
+    description: "Deux arbres replantés par arbre récolté",
     color: "dore",
   },
 ];
 
 const impacts = [
   {
-    title: "Réduction des déchets",
-    value: "95%",
-    description: "de valorisation de chaque arbre",
+    title: "Valorisation",
+    value: "90%+",
+    description: "objectif de valorisation par arbre",
     gradient: "from-sapin to-sapin/70",
   },
   {
     title: "Emplois locaux",
-    value: "120+",
-    description: "créés ou maintenus dans la région",
+    value: "100+",
+    description: "emplois potentiellement soutenus",
     gradient: "from-bois to-bois/70",
   },
   {
     title: "CO₂ séquestré",
-    value: "800t",
-    description: "par an grâce à la replantation",
+    value: "~1000t",
+    description: "par an via replantation (estimation)",
     gradient: "from-dore to-dore/70",
   },
 ];
@@ -60,10 +60,10 @@ export default function Impact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-sapin mb-4">
-            Notre Impact
+            Impact Potentiel
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Des résultats concrets pour l'écosystème vosgien et l'économie
+            Les bénéfices attendus pour l'écosystème vosgien et l'économie
             locale
           </p>
         </motion.div>
@@ -139,15 +139,14 @@ export default function Impact() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <p className="text-xl md:text-2xl text-gray-700 italic mb-6">
-              "Cette initiative redonne du sens à notre métier. Chaque pièce que
-              je crée raconte l'histoire d'un arbre, d'une forêt, d'un
-              territoire. C'est une fierté de pouvoir transmettre cela aux
-              clients."
+              "Une telle initiative redonnerait du sens à notre métier. Chaque pièce
+              raconterait l'histoire d'un arbre, d'une forêt, d'un territoire.
+              Ce serait une fierté de pouvoir transmettre cela aux clients."
             </p>
             <p className="text-lg font-semibold text-sapin">
-              Marc Dubois
+              Témoignage d'un artisan vosgien
             </p>
-            <p className="text-gray-600">Menuisier artisan - Gérardmer</p>
+            <p className="text-gray-600">Menuisier - Secteur de Gérardmer</p>
           </div>
         </motion.div>
       </div>

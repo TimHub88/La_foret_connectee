@@ -24,7 +24,7 @@ const features = [
     icon: FaQrcode,
     title: "Traçabilité Numérique",
     points: [
-      "QR code unique pour chaque arbre",
+      "Identifiant unique pour chaque arbre",
       "Données enregistrées en temps réel",
       "Transparence totale du parcours",
       "Accès instantané à l'historique complet",
@@ -74,11 +74,11 @@ export default function HowItWorks() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-sapin mb-4">
-            Comment ça marche ?
+            Comment ça fonctionnerait ?
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Un système complet pour valoriser et tracer nos ressources
-            forestières
+            Une proposition de système complet pour valoriser et tracer nos ressources
+            forestières vosgiennes
           </p>
         </motion.div>
 
@@ -119,10 +119,10 @@ export default function HowItWorks() {
           className="mt-16 bg-sapin text-casse rounded-2xl p-8 md:p-12 text-center"
         >
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Une approche innovante et responsable
+            Une proposition innovante et responsable
           </h3>
           <p className="text-lg opacity-90 max-w-3xl mx-auto">
-            Notre système combine technologies modernes et savoir-faire
+            Ce système proposé combinerait technologies modernes et savoir-faire
             traditionnel pour offrir une traçabilité complète et valoriser le
             patrimoine forestier vosgien tout en soutenant l'économie locale.
           </p>

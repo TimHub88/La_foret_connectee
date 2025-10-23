@@ -14,7 +14,7 @@ export default function Footer() {
               <h3 className="text-xl font-bold">La Forêt Connectée</h3>
             </div>
             <p className="text-casse/80 text-sm leading-relaxed">
-              Initiative de traçabilité et valorisation du bois vosgien.
+              Proposition concrète de traçabilité et valorisation du bois vosgien.
               Connecter la forêt aux artisans, les artisans aux consommateurs.
             </p>
           </div>
@@ -41,10 +41,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#qr-demo"
+                  href="#impact"
                   className="text-casse/80 hover:text-dore transition-colors"
                 >
-                  Démo QR
+                  Impact Potentiel
                 </a>
               </li>
               <li>
@@ -79,11 +79,11 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-3 text-sm">
               <a
-                href="mailto:contact@foret-connectee.fr"
+                href="mailto:contact@vosjinnove.fr"
                 className="flex items-center gap-2 text-casse/80 hover:text-dore transition-colors"
               >
                 <FaEnvelope />
-                contact@foret-connectee.fr
+                contact@vosjinnove.fr
               </a>
               <a
                 href="https://github.com/votre-compte/la-foret-connectee"

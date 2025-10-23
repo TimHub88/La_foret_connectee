@@ -13,7 +13,7 @@ const partners = [
   {
     name: "Imprimerie Vosgienne",
     category: "Technique",
-    description: "Impression des QR codes",
+    description: "Partenaire technique et communication",
   },
   {
     name: "Menuiserie Dubois",
@@ -105,21 +105,21 @@ export default function Partners() {
           className="bg-gradient-to-br from-sapin to-sapin/80 rounded-2xl p-8 md:p-12 text-center text-white"
         >
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            Rejoignez l'initiative
+            Rejoignez la proposition
           </h3>
           <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Vous êtes artisan, forestier, ou simplement intéressé par notre
-            démarche ? Contactez-nous pour en savoir plus.
+            Vous êtes artisan, forestier, élu local ou simplement intéressé par cette
+            proposition concrète ? Partagez votre intérêt et vos idées.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button
               onClick={() => setShowForm(true)}
               className="bg-dore text-sapin px-8 py-4 rounded-lg font-semibold text-lg hover:bg-dore/90 transition-all hover:scale-105 shadow-lg"
             >
-              Participer au projet
+              Manifester mon intérêt
             </button>
             <a
-              href="mailto:contact@foret-connectee.fr"
+              href="mailto:contact@vosjinnove.fr"
               className="bg-white text-sapin px-8 py-4 rounded-lg font-semibold text-lg hover:bg-casse transition-all hover:scale-105 shadow-lg"
             >
               Nous contacter
@@ -136,14 +136,15 @@ export default function Partners() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setShowForm(false)}
-            className="fixed inset-0 bg-black/70 z-40"
-          />
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
-            className="fixed inset-4 md:inset-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-full md:max-w-2xl bg-white rounded-2xl shadow-2xl z-50 p-8 max-h-[90vh] overflow-y-auto"
+            className="fixed inset-0 bg-black/70 z-40 flex items-center justify-center p-4"
           >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              onClick={(e) => e.stopPropagation()}
+              className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-8 relative"
+            >
             <button
               onClick={() => setShowForm(false)}
               className="absolute top-4 right-4 w-10 h-10 bg-sapin/10 hover:bg-sapin/20 rounded-full flex items-center justify-center transition-colors"
@@ -153,7 +154,7 @@ export default function Partners() {
             </button>
 
             <h3 className="text-2xl md:text-3xl font-bold text-sapin mb-6">
-              Participer au projet
+              Manifester votre intérêt
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -241,9 +242,10 @@ export default function Partners() {
             </form>
 
             <p className="text-sm text-gray-600 mt-4 text-center">
-              Cette démo n'envoie pas réellement de formulaire. En production,
-              un email serait envoyé.
+              Vos coordonnées seront utilisées uniquement pour échanger sur cette proposition.
+              Cette version de démonstration n'envoie pas réellement les données.
             </p>
+            </motion.div>
           </motion.div>
         </>
       )}
