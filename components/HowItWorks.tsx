@@ -90,19 +90,19 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all hover:scale-105 border-t-4 border-sapin"
             >
-              <div className="w-16 h-16 bg-sapin rounded-full flex items-center justify-center mb-4">
-                <feature.icon className="text-3xl text-casse" />
+              <div className="w-20 h-20 bg-gradient-to-br from-sapin to-sapin/80 rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                <feature.icon className="text-4xl text-casse" />
               </div>
-              <h3 className="text-xl font-bold text-sapin mb-4">
+              <h3 className="text-2xl font-bold text-sapin mb-5 leading-tight">
                 {feature.title}
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {feature.points.map((point, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="text-dore mt-1">•</span>
-                    <span className="text-gray-700 text-sm">{point}</span>
+                  <li key={idx} className="flex items-start gap-3">
+                    <span className="text-dore mt-1 text-lg font-bold">▸</span>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
                   </li>
                 ))}
               </ul>

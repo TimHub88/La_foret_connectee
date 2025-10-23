@@ -27,7 +27,7 @@ export default function Hero() {
         <div
           className="w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://vosgesphoto.com/wp-content/uploads/2023/01/20131230-002.jpg')",
+            backgroundImage: "url('https://cdn.pixabay.com/photo/2022/02/22/13/22/vosges-7028782_1280.jpg')",
           }}
         />
         {/* Dark overlay with green gradient */}

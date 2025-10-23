@@ -3,6 +3,7 @@
 import Hero from "@/components/Hero";
 import Timeline from "@/components/Timeline";
 import HowItWorks from "@/components/HowItWorks";
+import ArtisanProfile from "@/components/ArtisanProfile";
 import Impact from "@/components/Impact";
 import Gallery from "@/components/Gallery";
 import Partners from "@/components/Partners";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Timeline />
       <HowItWorks />
+      <ArtisanProfile />
       <Impact />
       <Gallery />
       <Partners />

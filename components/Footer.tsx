@@ -52,7 +52,15 @@ export default function Footer() {
                   href="#how-it-works"
                   className="text-casse/80 hover:text-dore transition-colors"
                 >
-                  Comment ça marche
+                  Comment ça fonctionnerait
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#artisan-profile"
+                  className="text-casse/80 hover:text-dore transition-colors"
+                >
+                  Portrait Artisan
                 </a>
               </li>
               <li>
@@ -60,7 +68,7 @@ export default function Footer() {
                   href="#impact"
                   className="text-casse/80 hover:text-dore transition-colors"
                 >
-                  Notre Impact
+                  Impact Potentiel
                 </a>
               </li>
               <li>

@@ -6,34 +6,52 @@ import { FaTimes } from "react-icons/fa";
 
 const partners = [
   {
-    name: "École d'Art d'Épinal",
+    name: "ENSTIB - École du Bois",
     category: "Formation",
-    description: "Partenaire formation et design",
-  },
-  {
-    name: "Imprimerie Vosgienne",
-    category: "Technique",
-    description: "Partenaire technique et communication",
-  },
-  {
-    name: "Menuiserie Dubois",
-    category: "Artisan",
-    description: "Transformation du bois",
-  },
-  {
-    name: "Atelier Martin",
-    category: "Artisan",
-    description: "Ébénisterie d'art",
+    description: "École Nationale Supérieure des Technologies et Industries du Bois (Épinal)",
+    potential: true,
   },
   {
     name: "ONF Vosges",
     category: "Forestier",
-    description: "Gestion forestière",
+    description: "Office National des Forêts - Gestion forestière durable",
+    potential: true,
   },
   {
-    name: "Coopérative Locale",
-    category: "Distribution",
-    description: "Vente et distribution",
+    name: "Menuiserie Maire",
+    category: "Artisan",
+    description: "Menuiserie d'agencement (Neufchâteau)",
+    potential: true,
+  },
+  {
+    name: "Fibois Grand Est",
+    category: "Interprofession",
+    description: "Association forêt-bois Grand Est",
+    potential: true,
+  },
+  {
+    name: "Parc Naturel Régional des Ballons des Vosges",
+    category: "Territoire",
+    description: "Protection et valorisation du territoire vosgien",
+    potential: true,
+  },
+  {
+    name: "Chambre de Métiers et de l'Artisanat Grand Est",
+    category: "Institutionnel",
+    description: "Soutien aux artisans locaux",
+    potential: true,
+  },
+  {
+    name: "Communes Forestières des Vosges",
+    category: "Institutionnel",
+    description: "Représentation des communes forestières",
+    potential: true,
+  },
+  {
+    name: "Coopérative Forestière Lorraine Grand Est",
+    category: "Forestier",
+    description: "Regroupement de propriétaires forestiers",
+    potential: true,
   },
 ];
 
@@ -67,10 +85,13 @@ export default function Partners() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-sapin mb-4">
-            Nos Partenaires
+            Partenaires Potentiels
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Un réseau local engagé pour la valorisation du bois vosgien
+            Un réseau d'acteurs locaux qui pourraient s'engager pour la valorisation du bois vosgien
+          </p>
+          <p className="text-sm text-bois mt-2 italic">
+            (Liste indicative - aucun partenariat n'est actuellement formalisé)
           </p>
         </motion.div>
 
@@ -83,15 +104,22 @@ export default function Partners() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-casse rounded-lg p-6 hover:shadow-lg transition-shadow border-l-4 border-sapin"
+              className="bg-white rounded-lg p-6 hover:shadow-lg transition-shadow border-l-4 border-sapin relative overflow-hidden"
             >
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="text-lg font-bold text-sapin">{partner.name}</h3>
-                <span className="text-xs bg-dore text-white px-2 py-1 rounded-full">
+              {partner.potential && (
+                <div className="absolute top-2 right-2">
+                  <span className="text-xs bg-dore/20 text-dore px-2 py-1 rounded-full font-semibold">
+                    Potentiel
+                  </span>
+                </div>
+              )}
+              <div className="mb-3">
+                <h3 className="text-lg font-bold text-sapin pr-16">{partner.name}</h3>
+                <span className="inline-block text-xs bg-sapin/10 text-sapin px-2 py-1 rounded-full mt-2">
                   {partner.category}
                 </span>
               </div>
-              <p className="text-gray-600 text-sm">{partner.description}</p>
+              <p className="text-gray-600 text-sm leading-relaxed">{partner.description}</p>
             </motion.div>
           ))}
         </div>
