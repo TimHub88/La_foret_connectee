@@ -1,313 +1,235 @@
-# La Forêt Connectée 🌲
+# 🌲 La Forêt Connectée - Transmettons la nature vosgienne
 
-## Transmettons la nature vosgienne
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-success?logo=vercel)](https://la-foret-connectee-lwx72jus3-timhub88s-projects.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 
-Site web vitrine présentant l'initiative de traçabilité et valorisation du bois vosgien. Du sapin à l'objet artisanal, suivez le parcours complet de nos ressources forestières.
+**Une proposition concrète pour tracer, valoriser et transformer chaque arbre de nos forêts vosgiennes en objets artisanaux uniques.**
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=flat&logo=tailwind-css)
+Site web présentant une initiative innovante de traçabilité et valorisation du bois vosgien, du sapin à l'objet artisanal.
 
-## 📋 Table des matières
+---
 
-- [Aperçu](#aperçu)
-- [Fonctionnalités](#fonctionnalités)
-- [Technologies](#technologies)
-- [Installation](#installation)
-- [Développement](#développement)
-- [Déploiement](#déploiement)
-- [Structure du projet](#structure-du-projet)
-- [Configuration](#configuration)
-- [Accessibilité](#accessibilité)
+## 🌟 Fonctionnalités
 
-## 🎯 Aperçu
+### 📱 Interface
+- ✅ **Design responsive** : Mobile, tablette, desktop
+- ✅ **Animations fluides** : Framer Motion
+- ✅ **Palette Vosges** : Vert sapin, brun bois, doré, blanc cassé
+- ✅ **Accessibilité** : ARIA, contrastes AA
 
-Ce projet est une **single page application** responsive qui présente le concept de traçabilité du bois vosgien. L'interface permet aux visiteurs de :
+### 🎯 Sections principales
+1. **Hero** - Page d'accueil immersive avec parallax
+2. **Timeline interactive** - Les 4 étapes du parcours (Forêt → Traçabilité → Atelier → Produit)
+3. **Comment ça fonctionnerait ?** - Système complet expliqué avec cartes interactives
+4. **Impact** - Chiffres et bénéfices potentiels pour l'écosystème
+5. **Portrait Artisan** - Focus sur Hugo NUNGE-THOUVENIN, jeune menuisier vosgien
+6. **Quiz interactif** - Testez vos connaissances sur la forêt vosgienne
+7. **Partenaires potentiels** - Réseau d'acteurs locaux
 
-- Découvrir le parcours complet d'un arbre (forêt → traçabilité → atelier → produit)
-- Scanner des QR codes pour accéder à l'historique détaillé de chaque arbre
-- Explorer l'impact écologique et social du projet
-- Contacter les partenaires et participer à l'initiative
+### 🎮 Quiz éducatif
+- 5 questions sur la forêt vosgienne avec **vraies statistiques**
+- Explications pédagogiques après chaque réponse
+- Score final avec message personnalisé
+- Partage sur réseaux sociaux
 
-## ✨ Fonctionnalités
+### 🎨 Design
+- Photos photo-réalistes des Vosges
+- Images d'artisans locaux
+- Cartes interactives avec images de fond
+- Effets hover et transitions fluides
 
-### Page principale
-- **Hero avec parallax** : Introduction immersive avec effet de profondeur
-- **Timeline interactive** : 4 étapes du parcours avec animations au survol
-- **Démonstration QR** : 3 arbres exemples avec QR codes cliquables
-- **Explications détaillées** : Sections "Comment ça marche" et "Impact"
-- **Galerie photo** : Images filtrables (Forêt / Atelier / Produit)
-- **Témoignages** : Citations d'artisans partenaires
-- **Formulaire de contact** : Modal pour participer au projet
+---
 
-### Pages dynamiques
-- **`/tree/[id]`** : Page de détail pour chaque arbre avec toutes ses informations
-- Génération statique de toutes les pages arbres au build
-- Pages 404 personnalisées
-
-### Animations
-- Transitions fluides avec **Framer Motion**
-- Effets parallax sur le hero
-- Animations au scroll (fade-in, slide-in)
-- Micro-interactions sur les boutons et cartes
-
-### Responsive
-- Mobile-first design
-- Breakpoints : mobile / tablette / desktop
-- Navigation adaptée selon la taille d'écran
-
-## 🛠 Technologies
-
-- **[Next.js 14](https://nextjs.org/)** - Framework React avec App Router
-- **[TypeScript](https://www.typescriptlang.org/)** - Typage statique
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS
-- **[Framer Motion](https://www.framer.com/motion/)** - Animations
-- **[qrcode.react](https://www.npmjs.com/package/qrcode.react)** - Génération de QR codes
-- **[React Icons](https://react-icons.github.io/react-icons/)** - Bibliothèque d'icônes
-
-## 📦 Installation
+## 🚀 Démarrage rapide
 
 ### Prérequis
+- Node.js 18+ 
+- npm ou yarn
 
-- Node.js 18+ ou 20+ (recommandé)
-- npm ou yarn ou pnpm
-
-### Étapes
+### Installation
 
 ```bash
-# Cloner le repository
-git clone https://github.com/votre-compte/la-foret-connectee.git
-cd la-foret-connectee
+# Cloner le dépôt
+git clone https://github.com/TimHub88/La_foret_connectee.git
+cd La_foret_connectee
 
 # Installer les dépendances
 npm install
-# ou
-yarn install
-# ou
-pnpm install
-```
 
-## 🚀 Développement
-
-```bash
-# Lancer le serveur de développement
+# Lancer en développement
 npm run dev
-# ou
-yarn dev
-# ou
-pnpm dev
 ```
 
-Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+Le site sera accessible sur **http://localhost:3000**
 
-Le projet utilise le **hot reloading** : toute modification sera visible immédiatement.
-
-### Scripts disponibles
+### Build de production
 
 ```bash
-npm run dev       # Serveur de développement
-npm run build     # Build de production
-npm run start     # Serveur de production
-npm run lint      # Linter ESLint
+# Build
+npm run build
+
+# Lancer en production
+npm run start
 ```
 
-## 🌐 Déploiement
+---
 
-### Déploiement sur Vercel (Recommandé)
+## 📦 Technologies utilisées
 
-#### Option 1 : Via l'interface Vercel
+| Technologie | Version | Usage |
+|------------|---------|-------|
+| **Next.js** | 14.2.0 | Framework React (App Router) |
+| **React** | 18.3.1 | Bibliothèque UI |
+| **TypeScript** | 5.0.0 | Typage statique |
+| **Tailwind CSS** | 3.4.3 | Styling CSS utilitaire |
+| **Framer Motion** | 11.0.0 | Animations |
+| **React Icons** | 5.0.0 | Icônes |
 
-1. Créer un compte sur [vercel.com](https://vercel.com)
-2. Cliquer sur "Add New Project"
-3. Importer votre repository GitHub
-4. Vercel détecte automatiquement Next.js
-5. Cliquer sur "Deploy"
-
-✅ C'est tout ! Vercel build et déploie automatiquement.
-
-#### Option 2 : Via CLI Vercel
-
-```bash
-# Installer Vercel CLI
-npm i -g vercel
-
-# Se connecter
-vercel login
-
-# Déployer
-vercel
-
-# Déployer en production
-vercel --prod
-```
-
-### Configuration Vercel
-
-Le fichier `next.config.js` est déjà configuré pour l'export statique :
-
-```js
-output: 'export'
-```
-
-Vercel détecte automatiquement cette configuration et génère un site statique.
-
-### Variables d'environnement
-
-Aucune variable d'environnement n'est requise pour ce projet (100% frontend).
-
-### URL de démo
-
-Une fois déployé, vous obtiendrez une URL du type :
-```
-https://la-foret-connectee.vercel.app
-```
-
-Les QR codes pointeront vers :
-```
-https://la-foret-connectee.vercel.app/tree/T-001
-https://la-foret-connectee.vercel.app/tree/T-002
-https://la-foret-connectee.vercel.app/tree/T-003
-```
+---
 
 ## 📁 Structure du projet
 
 ```
 la-foret-connectee/
-├── app/                      # Next.js App Router
-│   ├── layout.tsx           # Layout principal
-│   ├── page.tsx             # Page d'accueil
-│   ├── globals.css          # Styles globaux
-│   └── tree/[id]/           # Pages dynamiques arbres
-│       ├── page.tsx
-│       └── not-found.tsx
-├── components/              # Composants React
-│   ├── Hero.tsx
-│   ├── Timeline.tsx
-│   ├── QRDemo.tsx
-│   ├── HowItWorks.tsx
-│   ├── Impact.tsx
-│   ├── Gallery.tsx
-│   ├── Partners.tsx
-│   └── Footer.tsx
-├── data/                    # Données statiques
-│   └── trees.json          # Liste des arbres
-├── public/                  # Assets statiques
-│   └── images/             # Images (à ajouter)
+├── app/
+│   ├── layout.tsx          # Layout racine
+│   ├── page.tsx            # Page principale
+│   └── globals.css         # Styles globaux
+├── components/
+│   ├── Hero.tsx            # Section hero
+│   ├── Timeline.tsx        # Parcours interactif
+│   ├── HowItWorks.tsx      # Explications
+│   ├── Impact.tsx          # Impact écologique
+│   ├── ArtisanProfile.tsx  # Portrait Hugo
+│   ├── Quiz.tsx            # Quiz interactif
+│   ├── Partners.tsx        # Partenaires potentiels
+│   └── Footer.tsx          # Pied de page
+├── public/
+│   └── images/
+│       ├── STEP1.jpg       # Image étape Forêt
+│       ├── STEP2.jpg       # Image étape Traçabilité
+│       ├── STEP3.png       # Image étape Atelier
+│       └── STEP4.jpg       # Image étape Produit
+├── tailwind.config.ts      # Config Tailwind
 ├── package.json
-├── tsconfig.json
-├── tailwind.config.ts
-├── next.config.js
 └── README.md
 ```
 
-## ⚙️ Configuration
+---
 
-### Palette de couleurs
+## 🎨 Palette de couleurs
 
-Les couleurs du thème sont définies dans `tailwind.config.ts` :
-
-```typescript
-colors: {
-  sapin: "#0B5A33",   // Vert sapin (primary)
-  bois: "#7B4B2F",    // Brun bois
-  dore: "#D9B65A",    // Doré
-  brume: "#9FB3C8",   // Gris-bleu brume
-  casse: "#F6F5F1",   // Blanc cassé
-}
+```css
+--sapin: #0B5A33;        /* Vert sapin principal */
+--bois: #7B4B2F;         /* Brun bois chaud */
+--dore: #D9B65A;         /* Doré doux */
+--brume: #9FB3C8;        /* Gris/bleu brume */
+--casse: #F6F5F1;        /* Blanc cassé */
 ```
-
-### Données des arbres
-
-Les données sont dans `data/trees.json`. Pour ajouter un arbre :
-
-```json
-{
-  "id": "T-004",
-  "species": "Nom de l'espèce",
-  "origin": "Forêt de ...",
-  "date_inventory": "2025-10-15",
-  "artisan": "Nom de l'artisan",
-  "products": ["Produit 1", "Produit 2"],
-  "photos": ["/images/tree4-forest.jpg", "/images/tree4-product.jpg"],
-  "description": "Description détaillée...",
-  "coordinates": "48.xxxx° N, 6.xxxx° E"
-}
-```
-
-### Images
-
-Les images sont actuellement des placeholders Unsplash. Pour utiliser vos propres images :
-
-1. Placer les images dans `public/images/`
-2. Mettre à jour les URLs dans les composants
-3. Optimiser les images (format WebP recommandé)
-
-## ♿ Accessibilité
-
-Le site respecte les standards **WCAG 2.1 niveau AA** :
-
-- ✅ Contrastes de couleurs conformes
-- ✅ Textes alternatifs sur les images
-- ✅ Navigation au clavier
-- ✅ Attributs ARIA sur les modals
-- ✅ Structure sémantique HTML5
-- ✅ Focus visible sur les éléments interactifs
-
-### Tests d'accessibilité
-
-```bash
-# Utiliser Lighthouse dans Chrome DevTools
-# Performance / Accessibility / Best Practices / SEO
-```
-
-Objectif : **Score Lighthouse >= 90** sur toutes les métriques.
-
-## 🎨 Personnalisation
-
-### Modifier les textes
-
-Tous les textes sont directement dans les composants pour faciliter l'édition. Chercher et remplacer selon vos besoins.
-
-### Ajouter une section
-
-1. Créer un nouveau composant dans `components/`
-2. L'importer dans `app/page.tsx`
-3. L'ajouter dans le render
-
-### Modifier les animations
-
-Les animations sont configurées dans chaque composant avec Framer Motion. Exemple :
-
-```tsx
-<motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
->
-  {/* Contenu */}
-</motion.div>
-```
-
-## 📄 Licence
-
-Ce projet est un prototype de démonstration. Tous droits réservés.
-
-## 🤝 Contribution
-
-Ce projet est actuellement un prototype. Pour toute suggestion ou amélioration, veuillez contacter l'équipe via le formulaire de contact sur le site.
-
-## 📧 Contact
-
-- Email : contact@foret-connectee.fr
-- GitHub : [github.com/votre-compte/la-foret-connectee](https://github.com/votre-compte/la-foret-connectee)
-
-## 🙏 Crédits
-
-- Photos : [Unsplash](https://unsplash.com)
-- Icônes : [React Icons](https://react-icons.github.io/react-icons/)
-- Typographie : [Inter](https://fonts.google.com/specimen/Inter)
 
 ---
 
-**Développé avec ❤️ pour les Vosges**
+## 🌐 Déploiement
 
+### Vercel (recommandé)
+
+Le projet est configuré pour Vercel. Pour déployer :
+
+```bash
+# Installer Vercel CLI
+npm i -g vercel
+
+# Déployer en production
+vercel --prod
+```
+
+Ou connectez votre dépôt GitHub directement sur [vercel.com](https://vercel.com) pour un déploiement automatique.
+
+### Autres plateformes
+
+Le projet peut également être déployé sur :
+- **Netlify** : `npm run build` puis déployez le dossier `.next`
+- **GitHub Pages** : Nécessite export statique
+- **Serveur Node.js** : `npm run build && npm run start`
+
+---
+
+## 📊 Statistiques du quiz
+
+Les questions du quiz sont basées sur des **données réelles** :
+
+| Statistique | Valeur | Source |
+|------------|--------|--------|
+| Surface forestière Vosges | ~350 000 ha | ~59% du territoire |
+| Essence dominante | Épicéa commun | ~35% des forêts |
+| Bois récolté/an | ~1,2 M m³ | Filière bois locale |
+| Propriété privée | ~70% | Forêts privées |
+| Emplois directs | ~3 000 | Filière bois Vosges |
+
+---
+
+## 👤 Focus Artisan : Hugo NUNGE-THOUVENIN
+
+Le site met en avant **Hugo NUNGE-THOUVENIN**, jeune menuisier vosgien :
+- Apprenti chez Menuiserie Maire (Neufchâteau)
+- Étudiant à l'ENSTIB (École du Bois, Épinal)
+- Compétences : CAO/FAO/DAO, usinage MOCN 5 axes, menuiserie traditionnelle
+- Créations sur mesure pour particuliers
+
+---
+
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues ! Pour contribuer :
+
+1. Fork le projet
+2. Créez une branche (`git checkout -b feature/AmazingFeature`)
+3. Commit vos changements (`git commit -m 'Add: AmazingFeature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
+
+---
+
+## 📝 Licence
+
+Ce projet est une proposition/prototype éducatif pour valoriser la forêt vosgienne.
+
+---
+
+## 📧 Contact
+
+**Vosj'innove**
+- Email : contact@vosjinnove.fr
+- Site web : [https://la-foret-connectee-lwx72jus3-timhub88s-projects.vercel.app](https://la-foret-connectee-lwx72jus3-timhub88s-projects.vercel.app)
+- GitHub : [https://github.com/TimHub88/La_foret_connectee](https://github.com/TimHub88/La_foret_connectee)
+
+---
+
+## 🎯 Roadmap future
+
+- [ ] Système de traçabilité réel avec base de données
+- [ ] Intégration d'une vraie API artisans
+- [ ] Formulaire de contact fonctionnel
+- [ ] Plus de témoignages d'artisans
+- [ ] Dashboard pour artisans et forestiers
+- [ ] Application mobile compagnon
+
+---
+
+## 🌲 À propos de l'initiative
+
+Cette initiative vise à proposer un système complet de **traçabilité et valorisation** du bois vosgien :
+
+1. **Forêt** : Inventaire et identification des arbres
+2. **Traçabilité** : Système numérique de suivi
+3. **Transformation** : Artisans locaux qualifiés
+4. **Produit final** : Objets artisanaux tracés
+
+**Objectif** : Valoriser le patrimoine forestier vosgien, soutenir l'économie locale et sensibiliser à l'origine des produits.
+
+---
+
+**Fait avec ❤️ pour les Vosges** 🌲✨
