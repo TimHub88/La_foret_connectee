@@ -1,0 +1,36 @@
+[
+  {
+    "id": "T-001",
+    "species": "Sapin des Vosges",
+    "origin": "Forêt de Gérardmer",
+    "date_inventory": "2025-09-15",
+    "artisan": "Marc Dubois - Menuisier",
+    "products": ["Table basse artisanale", "Étagère murale"],
+    "photos": ["/images/tree1-forest.jpg", "/images/tree1-product.jpg"],
+    "description": "Sapin noble récolté de manière durable dans la forêt de Gérardmer. Transformé localement par un artisan menuisier vosgien.",
+    "coordinates": "48.0718° N, 6.8780° E"
+  },
+  {
+    "id": "T-002",
+    "species": "Épicéa commun",
+    "origin": "Forêt de La Bresse",
+    "date_inventory": "2025-09-20",
+    "artisan": "Sophie Martin - Ébéniste",
+    "products": ["Chaise design", "Cadre photo artisanal"],
+    "photos": ["/images/tree2-forest.jpg", "/images/tree2-product.jpg"],
+    "description": "Épicéa récolté selon les normes de gestion forestière durable. Valorisé par une ébéniste locale spécialisée dans le design contemporain.",
+    "coordinates": "48.0045° N, 6.8753° E"
+  },
+  {
+    "id": "T-003",
+    "species": "Pin sylvestre",
+    "origin": "Forêt de Ventron",
+    "date_inventory": "2025-10-01",
+    "artisan": "Jean Fournier - Sculpteur",
+    "products": ["Sculpture décorative", "Boîte à bijoux"],
+    "photos": ["/images/tree3-forest.jpg", "/images/tree3-product.jpg"],
+    "description": "Pin récolté dans le respect de l'écosystème vosgien. Transformé en pièces uniques par un sculpteur sur bois reconnu.",
+    "coordinates": "47.9281° N, 6.9364° E"
+  }
+]
+
